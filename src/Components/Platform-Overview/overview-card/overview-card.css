@@ -1,0 +1,84 @@
+.card {
+    background-color: hsl(227, 47%, 96%);
+    border-radius: 5px;
+    box-shadow: 10px 15px 0 hsl(0, 0%, 100%);
+    height: 200px;
+    width: 85%;
+    margin-bottom: 15px;
+}
+
+.social {
+    width: 85%;
+    margin-top: 8px;
+}
+
+.part-one h4,
+.part-two h4 {
+    font-size: 15px;
+    font-weight: 600;
+    color: hsl(228, 12%, 44%);
+}
+
+.view-number {
+    font-size: 30px;
+    font-weight: 700;
+    color: hsl(230, 17%, 14%);
+}
+
+h2 {
+    text-transform: capitalize;
+    align-self: flex-start;
+    padding-left: 30px;
+    text-shadow: 3px 3px hsl(0, 0%, 100%);
+}
+
+.view,
+.likes {
+    border-radius: 10px;
+    padding: 16px 18px 0px 18px;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (min-width: 630px) {
+    .view,
+    .likes {
+        width: 100% !important;
+    }
+}
+
+@media (min-width: 870px) {
+    .view,
+    .likes {
+        width: 100% !important;
+        align-items: center;
+        height: 120px;
+    }
+}
+
+.social-icon {
+    margin-top: 5px;
+}
+
+.view-rate {
+    margin-top: 11px;
+}
+
+.rate p {
+    display: inline-block;
+}
+
+.part-one,
+.part-two {
+    display: block;
+}
+
+.up p {
+    color: hsl(163, 72%, 41%)
+}
+
+.down p {
+    color: hsl(356, 69%, 56%);
+}

@@ -1,0 +1,106 @@
+.header {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 29px;
+    height: 200px;
+    text-align: left;
+    background-color: hsl(225, 100%, 98%);
+}
+
+@media (min-width: 630px) {
+    .header {
+        flex-direction: row;
+        justify-content: space-evenly;
+        padding-top: 20px;
+    }
+    hr {
+        display: none;
+    }
+    .intro {
+        margin-right: auto;
+    }
+    .toggle-mode p {
+        padding-right: 20px;
+    }
+}
+
+h1,
+hr,
+p {
+    margin-bottom: 5px;
+}
+
+h1 {
+    font-size: 24px;
+}
+
+p {
+    color: hsl(228, 12%, 44%);
+    font-weight: 700;
+}
+
+hr {
+    width: 100%;
+    align-self: center;
+}
+
+input[type="checkbox"] {
+    width: 36px;
+    border-radius: 5px;
+    height: 16px;
+    cursor: pointer;
+}
+
+.intro {
+    margin-top: 8px;
+    margin-bottom: 20px;
+}
+
+.toggle-mode {
+    display: flex;
+    justify-content: space-between;
+}
+
+label {
+    display: block;
+}
+
+label .checkbox-area {
+    display: inline-block;
+    width: 45px;
+    height: 24px;
+    position: relative;
+    top: -1px;
+    background: hsl(230, 22%, 74%);
+    left: 0;
+    border-radius: 16px;
+    border: 2px solid hsl(230, 22%, 74%);
+    transition: background-color .3s;
+}
+
+.checkbox-area::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 2px;
+    left: 5px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: hsl(227, 47%, 96%);
+    transition: left .3s;
+}
+
+input:checked+.checkbox-area::after {
+    border-color: #fff;
+    background-color: linear gradient hsl(210, 78%, 56%) to hsl(146, 68%, 55%) !important;
+}
+
+input:checked+.checkbox-area::after {
+    left: calc( 100% - 21px);
+    background-color: linear gradient hsl(210, 78%, 56%) to hsl(146, 68%, 55%);
+}
+
+input {
+    display: none;
+}

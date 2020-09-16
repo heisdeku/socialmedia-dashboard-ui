@@ -1,0 +1,28 @@
+.followers-section {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    width: 100vw;
+    justify-content: center;
+    z-index: 2;
+    position: relative;
+    top: -33px;
+    bottom: 30px;
+}
+
+@media (min-width: 630px) {
+    .followers-section {
+        flex-flow: row wrap;
+    }
+}
+
+h5 {
+    font-size: 15px;
+    letter-spacing: .25rem;
+    color: hsl(228, 12%, 44%);
+    font-weight: 400;
+}
+
+.facebook {
+    border-top: 5px solid hsl(208, 92%, 53%);
+}
