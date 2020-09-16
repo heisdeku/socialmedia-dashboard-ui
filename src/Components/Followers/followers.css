@@ -14,6 +14,9 @@
     .followers-section {
         flex-flow: row wrap;
     }
+    .followers-section .card {
+        height: 250px;
+    }
 }
 
 h5 {

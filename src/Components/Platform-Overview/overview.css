@@ -18,6 +18,11 @@ h2 {
     margin-bottom: 15px;
 }
 
+h2.dark {
+    color: hsl(0, 0%, 100%);
+    background-color: linear-gradient(hsl(210, 78%, 56%) to hsl(146, 68%, 55%));
+}
+
 @media (min-width: 630px) {
     h2 {
         font-size: 28px;

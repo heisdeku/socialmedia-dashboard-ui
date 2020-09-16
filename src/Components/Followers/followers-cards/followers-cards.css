@@ -14,6 +14,15 @@
     }
 }
 
+.card-dark {
+    background-color: hsl(228, 28%, 20%) !important;
+    box-shadow: none !important;
+}
+
+.card-dark h3 {
+    color: hsl(0, 0%, 100%);
+}
+
 .account {
     display: flex;
     flex-direction: column;

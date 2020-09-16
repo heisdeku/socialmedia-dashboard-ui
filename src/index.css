@@ -7,6 +7,10 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 
+.dark {
+    background-color: hsl(230, 17%, 14%);
+}
+
 * {
     margin: 0;
     padding: 0;

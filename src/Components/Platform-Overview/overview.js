@@ -6,11 +6,13 @@ import { ReactComponent as FacebookIcon} from '../../images/icon-facebook.svg';
 import { ReactComponent as TwitterIcon} from '../../images/icon-twitter.svg';
 import { ReactComponent as InstagramIcon} from '../../images/icon-instagram.svg';
 import { ReactComponent as YoutubeIcon} from '../../images/icon-youtube.svg';
-const Overview = () => {
+const Overview = ({mode}) => {
+    let classValue = mode ? "overview-cards overview-card-dark" : "overview-cards";
+    let headValue = mode ? "dark" : null;
     return (
         <div className="overview-section">
-            <h2>overview - Today</h2>
-            <div className="overview-cards">
+            <h2 className={headValue}>overview - Today</h2>
+            <div className={classValue}>
             <OverviewCard 
                 logo={<FacebookIcon/>}
                 typeOne={"Page View"}

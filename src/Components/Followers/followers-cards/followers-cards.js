@@ -5,8 +5,9 @@ class Card extends Component {
     
     render() {
         const props = this.props;
+        let classValue = props.mode ? "card card-dark" : "card";
         return (
-            <div className="card">
+            <div className={classValue}>
                 <div className="account">
                     <div className="platform">
                         <span className="logo">{props.logo}</span><p>@nathanf</p>

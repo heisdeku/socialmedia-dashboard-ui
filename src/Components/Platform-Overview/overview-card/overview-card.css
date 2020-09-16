@@ -23,13 +23,13 @@
     font-size: 30px;
     font-weight: 700;
     color: hsl(230, 17%, 14%);
+    text-align: left;
 }
 
 h2 {
     text-transform: capitalize;
     align-self: flex-start;
     padding-left: 30px;
-    text-shadow: 3px 3px hsl(0, 0%, 100%);
 }
 
 .view,
@@ -40,6 +40,17 @@ h2 {
     height: 100px;
     display: flex;
     justify-content: space-between;
+}
+
+.overview-card-dark .social .view,
+.overview-card-dark .social .likes {
+    background-color: hsl(228, 28%, 20%)!important;
+    box-shadow: none !important;
+}
+
+.overview-card-dark>.social .view p,
+.overview-card-dark .likes p {
+    color: hsl(0, 0%, 100%);
 }
 
 @media (min-width: 630px) {

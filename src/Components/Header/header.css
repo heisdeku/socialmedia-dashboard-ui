@@ -7,6 +7,14 @@
     background-color: hsl(225, 100%, 98%);
 }
 
+.header-dark {
+    background-color: hsl(232, 19%, 15%);
+}
+
+.header-dark h1 {
+    color: hsl(0, 0%, 100%);
+}
+
 @media (min-width: 630px) {
     .header {
         flex-direction: row;
