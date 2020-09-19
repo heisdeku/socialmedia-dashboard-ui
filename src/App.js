@@ -6,24 +6,15 @@ import Overview from './Components/Platform-Overview/overview';
 
 class App extends React.Component {
     state = {
-      darkMode: true,
+      darkMode: false,
     }
     toggleMode = this.toggleMode.bind(this);
  
   toggleMode() {
-    let darkMode;
-    if (this.state.mode) {
-        darkMode = false
-    } 
-    this.setState({darkMode: darkMode})
-    console.log(this.state.darkMode);
-  }
-  componentDidMount() {
-    console.log(this.state.darkMode)
-  }
-  componentDidUpdate() {
-   
-  }
+    this.setState({
+      darkMode: !this.state.darkMode
+    })     
+  } 
   render() {
     const { toggleMode } = this;
     const { darkMode } = this.state;

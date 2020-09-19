@@ -79,7 +79,7 @@ label .checkbox-area {
     height: 24px;
     position: relative;
     top: -1px;
-    background: hsl(230, 22%, 74%);
+    background-color: hsl(230, 22%, 74%);
     left: 0;
     border-radius: 16px;
     border: 2px solid hsl(230, 22%, 74%);
@@ -95,18 +95,18 @@ label .checkbox-area {
     width: 16px;
     height: 16px;
     border-radius: 50%;
-    background-color: hsl(227, 47%, 96%);
+    background-color: hsl(0, 0%, 100%);
     transition: left .3s;
 }
 
 input:checked+.checkbox-area::after {
-    border-color: #fff;
-    background-color: linear gradient hsl(210, 78%, 56%) to hsl(146, 68%, 55%) !important;
+    left: calc( 100% - 21px);
+    top: 3px;
 }
 
-input:checked+.checkbox-area::after {
-    left: calc( 100% - 21px);
-    background-color: linear gradient hsl(210, 78%, 56%) to hsl(146, 68%, 55%);
+input:checked+.checkbox-area {
+    border: none;
+    background-image: linear-gradient(90deg, #378fe6, #3eda82);
 }
 
 input {
